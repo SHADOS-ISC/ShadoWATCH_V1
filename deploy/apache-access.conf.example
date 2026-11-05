@@ -1,0 +1,4 @@
+# Restrict the dashboard to the SOC network (adjust the range, then: systemctl reload apache2)
+<Directory /var/www/html/shadowatch>
+    Require ip 192.0.2.0/24
+</Directory>
