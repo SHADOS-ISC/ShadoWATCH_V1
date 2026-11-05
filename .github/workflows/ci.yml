@@ -1,0 +1,18 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python -m py_compile misp_ioc_dashboard.py misp_cti.py
+      - run: python -m unittest discover -s tests -v
+      - run: python misp_ioc_dashboard.py --demo --out /tmp/demo.html
+      - name: Leak guard (no internal addresses or key prefixes in code)
+        run: "! grep -rnEi '172\\.(1[6-9]|2[0-9]|3[01])\\.|192\\.168\\.|prb5im' --include='*.py' --exclude-dir=tests ."
