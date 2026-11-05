@@ -1,14 +1,27 @@
-   .env
-   *.env
-   !.env.example
-   *.key
-   *.html
-   !docs/**/*.html
-   cti.json
-   *.tmp
-   *.mmdb
-   __pycache__/
-   *.pyc
-   .venv/
-   *.bak
-   *.bak[0-9]
+# Secrets and local configuration
+.env
+*.env
+!.env.example
+*.key
+
+# Generated output (contains real threat data)
+*.html
+!docs/**/*.html
+cti.json
+*.json.tmp
+*.tmp
+
+# GeoIP databases (MaxMind licence forbids redistribution)
+*.mmdb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local backups and editor files
+*.bak
+*.bak[0-9]
+.vscode/
+.idea/
