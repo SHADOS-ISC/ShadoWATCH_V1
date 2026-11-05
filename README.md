@@ -17,11 +17,11 @@ live, wall-screen-ready view for SOC analysts.
 
 | IOCs | Actors & malware | Security events |
 |---|---|---|
-| ![IOCs](docs/screenshots/02-iocs.png) | ![Actors](docs/screenshots/03-actors-malware.png) | ![Events](docs/screenshots/04-security-events.png) |
+| ![IOCs](docs/02-iocs.png) | ![Actors](docs/03-actors-malware.png) | ![Events](docs/04-security-events.png) |
 
 | New attacks | Vulnerabilities | Intel reports |
 |---|---|---|
-| ![New](docs/screenshots/05-new-attacks.png) | ![Vulns](docs/screenshots/06-vulnerabilities.png) | ![Reports](docs/screenshots/07-intel-reports.png) |
+| ![New](docs/05-new-attacks.png) | ![Vulns](docs/06-vulnerabilities.png) | ![Reports](docs/07-intel-reports.png) |
 
 </details>
 
