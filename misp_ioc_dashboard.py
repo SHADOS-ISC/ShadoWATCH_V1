@@ -2,7 +2,7 @@
 """
 ShadoWATCH: threat-intelligence dashboard for SOCs -> one self-contained HTML file (no CDN).
 Sources: MISP (REST) for IOCs and events; optional OpenCTI context via cti.json (see misp_cti.py).
-Tabs: Overview | IOCs (top IPs, hashes, domains/URLs) | Actors & malware | Security events | New attacks
+Tabs: Overview | IOCs (top IPs, hashes, domains/URLs) | Actors & malware | Security events | New attacks | TOP CVE
 
     python3 misp_ioc_dashboard.py --demo --out /tmp/ioc_demo.html
     python3 misp_ioc_dashboard.py --out /var/www/html/shadowatch/index.html
