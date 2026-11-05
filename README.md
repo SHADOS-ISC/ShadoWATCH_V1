@@ -11,7 +11,7 @@ live, wall-screen-ready view for SOC analysts.
 > Built from a real SOC need: analysts should see what is new, what is dangerous and what is
 > stale **without** opening five consoles. If the data stops flowing, the screen says so.
 
-![Overview](docs/screenshots/01-overview.png)
+![Overview](docs/01-overview.png)
 
 <details><summary>More screenshots (all generated from fake demo data)</summary>
 
